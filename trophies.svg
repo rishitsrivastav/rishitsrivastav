@@ -12,8 +12,6 @@
     <style><![CDATA[
       text { font-family:'Segoe UI',Arial,sans-serif; }
       .mono { font-family:'Courier New',monospace; }
-      .slide { opacity:0; transform:translateX(-14px); animation:slideIn 0.6s ease-out forwards; }
-      @keyframes slideIn { to { opacity:1; transform:translateX(0); } }
       .pop { opacity:0; transform:scale(0.6); transform-box:fill-box; transform-origin:center; animation:popIn 0.5s cubic-bezier(.2,1.5,.4,1) forwards; }
       @keyframes popIn { to { opacity:1; transform:scale(1); } }
       .blink { animation:blink 1.4s steps(1) infinite; }
@@ -22,11 +20,12 @@
   </defs>
   <g clip-path="url(#round)">
     <rect x="0" y="0" width="700" height="200" fill="url(#bg)"/>
-    <text x="20" y="30" font-size="15" font-weight="700" fill="#e6edf3">Achievements &amp; Trophies</text>
+    <text x="20" y="30" font-size="15" font-weight="700" fill="#e6edf3">Achievements</text>
   </g>
   <rect x="0.6" y="0.6" width="698.8" height="198.8" rx="16" fill="none" stroke="#c084fc" stroke-width="1.2" opacity="0.7"/>
-  
-    <g class="pop" style="animation-delay:0.30s" transform="translate(86.0,100)">
+
+    <g transform="translate(86.0,100)">
+    <g class="pop" style="animation-delay:0.30s">
       <rect x="-58" y="-62" width="116" height="132" rx="14" fill="#170a33" stroke="#ffd700" stroke-width="1.4" opacity="0.9"/>
       <g transform="translate(0,-24)">
         <path d="M-16,-18 h32 v14 a16,16 0 0 1 -32,0 z" fill="#ffd700"/>
@@ -41,7 +40,10 @@
         <animate attributeName="stroke-opacity" values="0;0.5;0" dur="2.4s" begin="0.90s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <g class="pop" style="animation-delay:0.48s" transform="translate(218.0,100)">
+    </g>
+
+    <g transform="translate(218.0,100)">
+    <g class="pop" style="animation-delay:0.48s">
       <rect x="-58" y="-62" width="116" height="132" rx="14" fill="#170a33" stroke="#ffd700" stroke-width="1.4" opacity="0.9"/>
       <g transform="translate(0,-24)">
         <path d="M-16,-18 h32 v14 a16,16 0 0 1 -32,0 z" fill="#ffd700"/>
@@ -56,7 +58,10 @@
         <animate attributeName="stroke-opacity" values="0;0.5;0" dur="2.4s" begin="1.08s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <g class="pop" style="animation-delay:0.66s" transform="translate(350.0,100)">
+    </g>
+
+    <g transform="translate(350.0,100)">
+    <g class="pop" style="animation-delay:0.66s">
       <rect x="-58" y="-62" width="116" height="132" rx="14" fill="#170a33" stroke="#ffd700" stroke-width="1.4" opacity="0.9"/>
       <g transform="translate(0,-24)">
         <path d="M-16,-18 h32 v14 a16,16 0 0 1 -32,0 z" fill="#ffd700"/>
@@ -71,7 +76,10 @@
         <animate attributeName="stroke-opacity" values="0;0.5;0" dur="2.4s" begin="1.26s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <g class="pop" style="animation-delay:0.84s" transform="translate(482.0,100)">
+    </g>
+
+    <g transform="translate(482.0,100)">
+    <g class="pop" style="animation-delay:0.84s">
       <rect x="-58" y="-62" width="116" height="132" rx="14" fill="#170a33" stroke="#ffd700" stroke-width="1.4" opacity="0.9"/>
       <g transform="translate(0,-24)">
         <path d="M-16,-18 h32 v14 a16,16 0 0 1 -32,0 z" fill="#ffd700"/>
@@ -86,7 +94,10 @@
         <animate attributeName="stroke-opacity" values="0;0.5;0" dur="2.4s" begin="1.44s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <g class="pop" style="animation-delay:1.02s" transform="translate(614.0,100)">
+    </g>
+
+    <g transform="translate(614.0,100)">
+    <g class="pop" style="animation-delay:1.02s">
       <rect x="-58" y="-62" width="116" height="132" rx="14" fill="#170a33" stroke="#cd7f32" stroke-width="1.4" opacity="0.9"/>
       <g transform="translate(0,-24)">
         <path d="M-16,-18 h32 v14 a16,16 0 0 1 -32,0 z" fill="#cd7f32"/>
@@ -100,5 +111,6 @@
       <rect x="-58" y="-62" width="116" height="132" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0">
         <animate attributeName="stroke-opacity" values="0;0.5;0" dur="2.4s" begin="1.62s" repeatCount="indefinite"/>
       </rect>
+    </g>
     </g>
 </svg>
