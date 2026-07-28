@@ -31,7 +31,7 @@
       stroke-dasharray="326.7" stroke-dashoffset="326.7" transform="rotate(-90)">
       <animate attributeName="stroke-dashoffset" from="326.7" to="29.4" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
     </circle>
-    <text x="0" y="-2" text-anchor="middle" font-size="24" font-weight="800" fill="#e6edf3">A+</text>
+    <text x="0" y="-2" text-anchor="middle" font-size="24" font-weight="800" fill="#e6edf3">O</text>
     <text x="0" y="18" text-anchor="middle" font-size="10.5" fill="#cdd3dd">RANK</text>
   </g>
   
