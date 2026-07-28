@@ -1,0 +1,70 @@
+<svg width="470" height="200" viewBox="0 0 470 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#170e28"/>
+      <stop offset="100%" stop-color="#1c1230"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7eb6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <clipPath id="round"><rect x="0" y="0" width="470" height="200" rx="16"/></clipPath>
+    <style><![CDATA[
+      text { font-family:'Segoe UI',Arial,sans-serif; }
+      .mono { font-family:'Courier New',monospace; }
+      .slide { opacity:0; transform:translateX(-14px); animation:slideIn 0.6s ease-out forwards; }
+      @keyframes slideIn { to { opacity:1; transform:translateX(0); } }
+      .pop { opacity:0; transform:scale(0.6); transform-box:fill-box; transform-origin:center; animation:popIn 0.5s cubic-bezier(.2,1.5,.4,1) forwards; }
+      @keyframes popIn { to { opacity:1; transform:scale(1); } }
+      .blink { animation:blink 1.4s steps(1) infinite; }
+      @keyframes blink { 50% { opacity:0.25; } }
+    ]]></style>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect x="0" y="0" width="470" height="200" fill="url(#bg)"/>
+    <text x="20" y="30" font-size="15" font-weight="700" fill="#e6edf3">Rishit's Dev Snapshot</text>
+  </g>
+  <rect x="0.6" y="0.6" width="468.8" height="198.8" rx="16" fill="none" stroke="#c084fc" stroke-width="1.2" opacity="0.7"/>
+  <g transform="translate(84,108)">
+    <circle r="52" fill="none" stroke="#2a1f3d" stroke-width="10"/>
+    <circle r="52" fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"
+      stroke-dasharray="326.7" stroke-dashoffset="326.7" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" from="326.7" to="29.4" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+    </circle>
+    <text x="0" y="-2" text-anchor="middle" font-size="24" font-weight="800" fill="#e6edf3">A+</text>
+    <text x="0" y="18" text-anchor="middle" font-size="10.5" fill="#cdd3dd">RANK</text>
+  </g>
+  
+    <g class="slide" style="animation-delay:0.50s">
+      <text x="176" y="40" font-size="12" font-weight="600" fill="#cdd3dd">CGPA (current)</text>
+      <text x="426" y="40" text-anchor="end" class="mono" font-size="12" fill="#e6edf3">9.72 / 10</text>
+      <rect x="176" y="46" width="250" height="7" rx="3.5" fill="#2a1f3d"/>
+      <rect x="176" y="46" width="0" height="7" rx="3.5" fill="#ff7eb6">
+        <animate attributeName="width" from="0" to="242.5" dur="1s" begin="0.65s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      </rect>
+    </g>
+    <g class="slide" style="animation-delay:0.68s">
+      <text x="176" y="74" font-size="12" font-weight="600" fill="#cdd3dd">Hackathons Won</text>
+      <text x="426" y="74" text-anchor="end" class="mono" font-size="12" fill="#e6edf3">2</text>
+      <rect x="176" y="80" width="250" height="7" rx="3.5" fill="#2a1f3d"/>
+      <rect x="176" y="80" width="0" height="7" rx="3.5" fill="#8b5cf6">
+        <animate attributeName="width" from="0" to="250.0" dur="1s" begin="0.83s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      </rect>
+    </g>
+    <g class="slide" style="animation-delay:0.86s">
+      <text x="176" y="108" font-size="12" font-weight="600" fill="#cdd3dd">Certifications Earned</text>
+      <text x="426" y="108" text-anchor="end" class="mono" font-size="12" fill="#e6edf3">4</text>
+      <rect x="176" y="114" width="250" height="7" rx="3.5" fill="#2a1f3d"/>
+      <rect x="176" y="114" width="0" height="7" rx="3.5" fill="#ff7eb6">
+        <animate attributeName="width" from="0" to="200.0" dur="1s" begin="1.01s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      </rect>
+    </g>
+    <g class="slide" style="animation-delay:1.04s">
+      <text x="176" y="142" font-size="12" font-weight="600" fill="#cdd3dd">Leadership Roles</text>
+      <text x="426" y="142" text-anchor="end" class="mono" font-size="12" fill="#e6edf3">2</text>
+      <rect x="176" y="148" width="250" height="7" rx="3.5" fill="#2a1f3d"/>
+      <rect x="176" y="148" width="0" height="7" rx="3.5" fill="#8b5cf6">
+        <animate attributeName="width" from="0" to="175.0" dur="1s" begin="1.19s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1" keyTimes="0;1"/>
+      </rect>
+    </g>
+</svg>
