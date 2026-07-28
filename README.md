@@ -12,7 +12,7 @@
 
 <table align="center" border="0">
 <tr>
-<td width="45%" align="center" valign="middle">
+<td width="65%" align="center" valign="middle">
 
 <!-- Swinging Lanyard ID Card (pure SVG) -->
 <img src="./lanyard.svg?v=2" alt="Rishit Srivastava ID badge" width="300"/>
